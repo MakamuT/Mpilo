@@ -51,57 +51,28 @@ body{
     line-height: 75px;
     font-size: 1.5em;
     text-align: center;
-    transition: .5s;
+    /*transition: .5s;*/
 }
 .navigation li.active a .icon{
     transform: translateY(-35px);
 }
 .navigation a .text{
+    color: #1d3557;
     position: absolute;
     font-weight: 400;
     font-size: .75em;
     letter-spacing: .05em;
-    transition: .5s;
-    opacity: 0;
     transform: translateY(20px);
 }
-.navigation li.active a .text{
-    opacity: 1;
-    transform: translateY(10px);
-}
-.indicator{
-    position: absolute;
-    top: -50%;
-    width: 70px;
-    height: 70px;
-    background: #457b9d;
-    box-sizing: border-box;
+
+.navigation li a:hover{
+    background: #e63946;
     border-radius: 50%;
-    border: 6px solid #1d3557;
-    transition: .5s;
+    margin-top: -20px;
+    border: 5px solid #1d3557;
+    
 }
-.indicator::before, .indicator::after{
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    background: transparent;
+.navigation .icon:hover{
+    color: #1d3557;
 }
-.indicator::before{
-    left: -22px;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 #1d3557;
-}
-.indicator::after{
-    right: -22px;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 #1d3557;
-}
-.navigation li.active~.indicator{
-    --x:0;
-    transform: translateX(var(--x));
-}
-.navigation li:nth-child(2).active~.indicator {--x: 70px;}
-.navigation li:nth-child(3).active~.indicator {--x: 140px;}
-.navigation li:nth-child(4).active~.indicator {--x: 210px;}
+/**Chatbot**/
