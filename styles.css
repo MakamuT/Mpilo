@@ -8,7 +8,7 @@ body{
     color: #f1faee;
 }
 /**navbar**/
-.navigation{
+.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,22 +20,20 @@ body{
     background: #a8dadc;
     border-radius: 10px;
 }
-.icon, .text{
-    color: #e63946;
-}
-.navigation ul{
+
+.navbar ul{
     display: flex;
     width: 350px;
     padding: 0;
 }
-.navigation li{
+.navbar li{
     position: relative;
     list-style: none;
     width: 70px;
     height: 70px;
     z-index: 1;
 }
-.navigation a{
+.navbar a{
     position: relative;
     display: flex;
     justify-content: center;
@@ -45,7 +43,8 @@ body{
     text-align: center;
     font-weight: 500;
 }
-.navigation a .icon{
+.navbar a .icon{
+    color: #e63946;
     position: relative;
     display: block;
     line-height: 75px;
@@ -53,10 +52,10 @@ body{
     text-align: center;
     /*transition: .5s;*/
 }
-.navigation li.active a .icon{
+.navbar li.active a .icon{
     transform: translateY(-35px);
 }
-.navigation a .text{
+.navbar a .text{
     color: #1d3557;
     position: absolute;
     font-weight: 400;
@@ -65,7 +64,7 @@ body{
     transform: translateY(20px);
 }
 
-.navigation li a:hover{
+.navbar li a:hover{
     background: #e63946;
     border-radius: 50%;
     margin-top: -20px;
@@ -75,4 +74,39 @@ body{
 .navigation .icon:hover{
     color: #1d3557;
 }
-/**Chatbot**/
+/**Searchbar**/
+.search-head{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 115px;
+    margin-left: -200px;
+}
+.heading{
+    font-size: 85px;
+    margin-bottom: 0;
+    color: #e63946;
+    text-transform: uppercase;
+}
+.searchbar{
+    width: 600px;
+    margin-top: 25px;
+    border-radius: 20px;
+    height: 30px;
+    border: 4px solid #a8dadc;
+    outline: none;
+    padding-left: 50px;
+}
+.fa-search{
+    color: #1d3557;
+    margin-left: 20px;
+    margin-top: 40px;
+    position: absolute;
+}
+.fa-microphone{
+    color: #e63946;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 630px;
+}
