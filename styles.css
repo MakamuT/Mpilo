@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background: #1d3557;
+    background: #a8dadc;
     color: #f1faee;
 }
 /**navbar**/
@@ -17,7 +17,7 @@ body{
     margin-top: 30px;
     width: 386px;
     height: 70px;
-    background: #a8dadc;
+    background: transparent;
     border-radius: 10px;
 }
 
