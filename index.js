@@ -1,5 +1,5 @@
-const searchbar = document.getElementById("search-bar");
+const search = document.getElementById("search");
 
-searchbar.addEventListener("click", function () {
+search.addEventListener("click", function () {
   console.log("It Works");
 });
