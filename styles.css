@@ -4,8 +4,8 @@
   padding: 0;
 }
 body{
-    background: #a8dadc;
-    color: #f1faee;
+    background: #f1faee;
+    color: black;
 }
 /**navbar**/
 .navbar{
@@ -17,7 +17,7 @@ body{
     margin-top: 30px;
     width: 386px;
     height: 70px;
-    background: #a8dadc;
+    background: transparent;
     border-radius: 10px;
 }
 
@@ -65,7 +65,7 @@ body{
 }
 
 .navbar li a:hover {
-  background: #e63946;
+  background: transparent;
   border-radius: 50%;
   margin-top: -20px;
   border: 5px solid #1d3557;
