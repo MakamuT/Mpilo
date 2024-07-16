@@ -13,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-left: 32rem;
+  margin-left: 390px;
   margin-top: 30px;
   width: 386px;
   height: 70px;
@@ -110,53 +110,5 @@ body {
   margin-top: 40px;
   margin-left: 630px;
 }
-.texthead {
-  font-size: 20px;
-}
-a {
-  color: #1d3557;
-  text-decoration: none;
-}
 
-/**Login page*/
-.login-container{
-  background: #a8dadc;
-  align-self: center;
-  width: 450px;
-}
-form{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-}
-button{
-  background-color: #1d3557;
-  border-radius: 25px;
-  font-size: 20px;
-  text-align: center;
-  width: 65px;
-}
-
-
-
-
-/*media queries*/
-/*for mobile */
-@media only screen and (max-width: 942px) {
-  .search-head {
-    white-space: nowrwp;
-  }
-  .searchbar {
-    width: 400px;
-  }
-  .fa-microphone {
-    margin: 0;
-    margin-top: 40px;
-    margin-left: 430px;
-  }
-  .navbar {
-    align-items: center;
-    margin-left: 105px;
-  }
-}
+/**popup css**/
