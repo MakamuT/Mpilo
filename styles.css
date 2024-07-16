@@ -143,11 +143,11 @@ header{
   left: 17px;
   color: #e63946;
 }
-.input-field{
+.login-container .input-field{
   display: flex;
   flex-direction: column;
 }
-.input{
+.login-container .input{
   height: 45px;
   width: 87%;
   border: 2px solid #1d3557;
@@ -157,7 +157,7 @@ header{
   padding: 0 0 0 45px;
   background: rgba(255, 255, 255, 0.1);
 }
-.submit{
+.login-container .submit{
   border: 1px solid #1d3557;
   border-radius: 30px;
   cursor: pointer;
@@ -180,5 +180,69 @@ header{
   text-decoration: none;
   color: #e63946;
 }
+.bottom a:hover{
+  color: #a8dadc;
+  font-weight: 900;
+}
+
+/*for mobile*/
+@media (max-width: 768px) {
+  .navbar {
+    margin: 0 auto;
+    margin-top: 15px;
+    height: auto;
+    flex-direction: row;
+  }
+  .navbar ul {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navbar li {
+    width: 90%;
+    height: auto;
+  }
+  .search-head {
+    margin-top: 60px;
+  }
+  .fa-search{
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+  .heading {
+    font-size: 48px;
+    text-align: center;
+  }
+  .searchbar {
+    width: 80%;
+    margin-top: 15px;
+    padding-left: 40px;
+  }
+  .fa-search{
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+  .fa-microphone{
+    margin-top: 25px;
+    margin-left: 415px;
+  }
+  
+  .box {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .login-container {
+    width: 100%;
+    padding: 0;
+  }
+  .input {
+    width: 100%;
+  }
+  .submit {
+    margin: 20px auto;
+    width: 80%;
+  }
+}
+
 
 /**popup css**/
