@@ -3,24 +3,23 @@
   margin: 0;
   padding: 0;
 }
-body{
-    background: #f1faee;
-    color: black;
+body {
+  background: #f1faee;
+  color: black;
 }
 /**navbar**/
-.navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-left: 390px;
-    margin-top: 30px;
-    width: 386px;
-    height: 70px;
-    background: transparent;
-    border-radius: 10px;
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 32rem;
+  margin-top: 30px;
+  width: 386px;
+  height: 70px;
+  background: transparent;
+  border-radius: 10px;
 }
-
 .navbar ul {
   display: flex;
   width: 350px;
@@ -80,7 +79,6 @@ body{
   flex-direction: column;
   justify-content: center;
   margin-top: 115px;
-  margin-left: -200px;
 }
 .heading {
   font-size: 85px;
@@ -111,4 +109,54 @@ body{
   position: absolute;
   margin-top: 40px;
   margin-left: 630px;
+}
+.texthead {
+  font-size: 20px;
+}
+a {
+  color: #1d3557;
+  text-decoration: none;
+}
+
+/**Login page*/
+.login-container{
+  background: #a8dadc;
+  align-self: center;
+  width: 450px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+button{
+  background-color: #1d3557;
+  border-radius: 25px;
+  font-size: 20px;
+  text-align: center;
+  width: 65px;
+}
+
+
+
+
+/*media queries*/
+/*for mobile */
+@media only screen and (max-width: 942px) {
+  .search-head {
+    white-space: nowrwp;
+  }
+  .searchbar {
+    width: 400px;
+  }
+  .fa-microphone {
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 430px;
+  }
+  .navbar {
+    align-items: center;
+    margin-left: 105px;
+  }
 }
