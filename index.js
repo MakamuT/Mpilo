@@ -53,3 +53,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+const signUp = document.getElementById("submitSignUp");
+signUp.addEventListener("click", (event) => {
+  event.preventDefault();
+});
