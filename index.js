@@ -57,4 +57,9 @@ const app = initializeApp(firebaseConfig);
 const signUp = document.getElementById("submitSignUp");
 signUp.addEventListener("click", (event) => {
   event.preventDefault();
+  const fullName = document.getElementById("fname").value;
+  const email = document.getElementById("sEmail").value;
+  const phoneNumber = document.getElementById("pNumber").value;
+  const username = document.getElementById("sUsername").value;
+  const password = document.getElementById("sPassword").value;
 });
