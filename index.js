@@ -62,4 +62,17 @@ signUp.addEventListener("click", (event) => {
   const phoneNumber = document.getElementById("pNumber").value;
   const username = document.getElementById("sUsername").value;
   const password = document.getElementById("sPassword").value;
+
+  const auth = getAuth();
+  const db = getFirestore();
+
+  createUserWithEmailAndPassword(auth, email, password).then(
+    (userCredential) => {
+      const user = userCredential.user;
+      const userData = {
+        email: email,
+        fullName: fullName,
+      };
+    }
+  );
 });
