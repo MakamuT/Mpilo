@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpilo Reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<section class="testimonials">
+<div class="container">
+    <div class="section-header">
+        <h2 class="title">what our clients say</h2>
+    </div>
+    <div class="testimonials-content">
+        <div class="swiper testimonials-slider js-testimonials-slider">
+            <div class= "swiper-wrapper">
+                <div class="swiper-slide testimonials-item">
+                    <div class="ïnfo">
+                        <img src="Elizabeth-canva.jpg" alt="img">
+                        <div class="text-box">
+                            <h3 class="name">Elizabeth</h3>
+                            <span class="job">Stomach Ulcers</span>
+                        </div>
+                    </div>
+                    <p>I had reoccuring stomach ulcers that were caused and aggravated by alcohol and spicy foods, Mpilo App helped me set an appointment with a GP around my area which was speedy, and i recieved assistance with my illness. Thank you Mpilo App. </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div> 
+                </div>
+                <div class="swiper-slide testimonials-item">
+                    <div class="info">
+                        <img src="medium-shot-happy-guy-holding-his-smartphone.jpg" alt="img">
+                            <div class="text-box">
+                                <h3 class="name">Thabang</h3>
+                                <span class="job">Regular Checkup</span>
+                            </div>
+                    </div>
+                    <p>Mpilo App helped me book a regular checkup effortlessly. The service was prompt, and the doctor was very professional. Highly recommended!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-item">
+                    <div class="ïnfo">
+                        <img src="moe-canva.jpg" alt="img">
+                        <div class="text-box">
+                            <h3 class="name">Moe</h3>
+                            <span class="job">Skin Rash</span>
+                        </div>
+                    </div>
+                    <p>I had a persistent skin rash, and Mpilo App connected me with a dermatologist quickly. The treatment was effective, and I am very grateful.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonials-item">
+                    <div class="info">
+                        <img src="medium-shot-smiley-woman-posing-outside.jpg" alt="img">
+                        <div class="text-box">
+                            <h3 class="name">Nomcebo</h3>
+                            <span class="job">Dental Checkup</span>
+                        </div>
+                    </div>
+                    <p>Booking a dental checkup through Mpilo App was very convenient. The dentist was thorough and attentive. Thank you, Mpilo App!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div> 
+                </div>                
+                <div class="swiper-slide testimonials-item">
+                    <div class="info">
+                        <img src="thembi-canva.jpg" alt="img">
+                        <div class="text-box">
+                            <h3 class="name">Thembi</h3>
+                            <span class="job">Cold&Flu</span>
+                        </div>
+                    </div>
+                    <p>I had a severe flu, and Mpilo App helped me find a nearby clinic quickly. The process was smooth, and I received the care I needed.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>                                  
+                </div>
+        </div>
+        <div class="swiper-pagination js-testimonials-pagination"></div>
+
+    </div>
+</div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script> 
+const swiper = new Swiper('.js-testimonials-slider', {
+    grabCursor: true,
+    spaceBetween:30,
+    pagination:{
+        el: '.js-testimonials-pagination',
+        clickable: true,
+    },
+    breakpoints:{
+        767:{
+            slidesPerView: 2
+        },
+        1024: {
+            slidesPerView: 2
+        }
+    }
+});
+    </script>
+<body>
+    
+</body>
+</html>
