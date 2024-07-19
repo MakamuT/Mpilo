@@ -110,7 +110,7 @@ body {
   margin-top: 40px;
   margin-left: 630px;
 }
-.searchBtn {
+.search {
   margin: 0 5px;
   margin-top: 20px;
   padding: 12px 20px;
@@ -122,7 +122,7 @@ body {
   border: 1px solid transparent;
   outline: none;
 }
-.searchBtn:hover {
+.search:hover {
   border: 1px solid #a8dadc;
 }
 /**login page**/
