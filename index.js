@@ -25,3 +25,5 @@ function closePopup() {
   document.getElementById("popup").style.visibility = "hidden";
   document.getElementById("popup").style.opacity = "0";
 }  */
+
+// SearchBar

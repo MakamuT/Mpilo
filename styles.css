@@ -86,7 +86,7 @@ body {
   color: #e63946;
   text-transform: uppercase;
 }
-.searchbar {
+.searchBar {
   width: 600px;
   margin-top: 25px;
   border-radius: 20px;
@@ -109,6 +109,21 @@ body {
   position: absolute;
   margin-top: 40px;
   margin-left: 630px;
+}
+.searchBtn {
+  margin: 0 5px;
+  margin-top: 20px;
+  padding: 12px 20px;
+  color: #000;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  outline: none;
+}
+.searchBtn:hover {
+  border: 1px solid #a8dadc;
 }
 /**login page**/
 .box {
