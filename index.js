@@ -27,3 +27,15 @@ function closePopup() {
 }  */
 
 // SearchBar
+
+// API integration
+const API_KEY = "sk-proj-5UDmDED8RbyFxGwbX4CeT3BlbkFJWHsk6CWSjr3p0BHD7Brs";
+const searchButton = document.querySelector("#search");
+
+async function getMessage() {
+  console.log("clicked");
+  try {
+  } catch {}
+}
+
+searchButton.addEventListener("click", getMessage);
