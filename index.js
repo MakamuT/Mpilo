@@ -32,7 +32,9 @@ async function getMessage() {
     );
     const data = await response.json();
     console.log(data);
-  } catch {}
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 searchButton.addEventListener("click", getMessage);
