@@ -1,13 +1,12 @@
-const OPENAI_API_KEY =
-  "sk-proj-GDBtvEfLQfUnui2x2ArsT3BlbkFJyVqli4JtveBRwmtrsjsH";
-const searchButton = document.querySelector("#search");
+const API_KEY = "sk-proj-GDBtvEfLQfUnui2x2ArsT3BlbkFJyVqli4JtveBRwmtrsjsH";
+const clickSubmitButton = document.querySelector("#clicksubmit");
 
 async function getMessage() {
   console.log("clicked");
   const options = {
-    method: "POST",
+    method: POST,
     headers: {
-      Authorization: "Bearer ${OPENAI_API_KEY}",
+      Authorization: "Bearer ${API_KEY}",
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
