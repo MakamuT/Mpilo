@@ -36,4 +36,4 @@ async function getMessage() {
   }
 }
 
-searchButton.addEventListener("click", getMessage);
+clickSubmitButton.addEventListener("click", getMessage);
