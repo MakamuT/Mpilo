@@ -24,10 +24,10 @@ logIn.addEventListener("click", function (event) {
   event.preventDefault();
 
   // inputs
-  const username = document.getElementById("username").value;
+  const emailLink = document.getElementById("emailLink").value;
   const passwordLink = document.getElementById("passwordLink").value;
 
-  signInWithEmailAndPassword(auth, username, passwordLink)
+  signInWithEmailAndPassword(auth, emailLink, passwordLink)
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
