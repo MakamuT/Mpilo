@@ -1,5 +1,5 @@
 const API_KEY = "sk-proj-GDBtvEfLQfUnui2x2ArsT3BlbkFJyVqli4JtveBRwmtrsjsH";
-const clickSubmitButton = document.querySelector("#clicksubmit");
+const clickSubmitButton = document.querySelector("#clickSubmit");
 
 async function getMessage() {
   console.log("clicked");
