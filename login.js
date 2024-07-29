@@ -1,5 +1,4 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-
 import {
   getAuth,
   signInWithEmailAndPassword,
@@ -20,20 +19,17 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 // submit button
-const createAccount = document.getElementById("createAccount");
-createAccount.addEventListener("click", function (event) {
+const logIn = document.getElementById("logIn");
+logIn.addEventListener("click", function (event) {
   event.preventDefault();
 
   // inputs
-  const fullName = document.getElementById("fullName").value;
-  const emailLink = document.getElementById("emailLink").value;
-  const phoneNumber = document.getElementById("phoneNumber").value;
   const username = document.getElementById("username").value;
   const passwordLink = document.getElementById("passwordLink").value;
 
-  signInWithEmailAndPasswor(auth, emailLink, passwordLink)
+  signInWithEmailAndPassword(auth, username, passwordLink)
     .then((userCredential) => {
-      // Signed up
+      // Signed in
       const user = userCredential.user;
       alert("Logging in...");
       window.location.href = "search.html";
