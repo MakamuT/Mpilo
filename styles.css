@@ -97,19 +97,22 @@ body {
 }
 .fa-search {
   color: #1d3557;
+  cursor: pointer;
   margin-left: 20px;
-  margin-top: 40px;
-  position: absolute;
+  margin-top: 35px;
+  position: fixed;
 }
 .fa-search:hover {
   cursor: pointer;
 }
 .fa-microphone {
   color: #e63946;
-  position: absolute;
-  margin-top: 40px;
+  cursor: pointer;
+  position: fixed;
+  margin-top: 35px;
   margin-left: 630px;
 }
+
 /**login page**/
 .box {
   display: flex;
@@ -250,7 +253,7 @@ header {
 }
 
 /*for mobile*/
-@media (max-width: 768px) {
+@media (max-width: 650px) {
   .navbar {
     margin: 0 auto;
     margin-top: 15px;
@@ -269,26 +272,16 @@ header {
   .search-head {
     margin-top: 60px;
   }
-  .fa-search {
-    margin-top: 40px;
-    margin-left: 20px;
-  }
   .heading {
     font-size: 48px;
     text-align: center;
   }
-  .searchbar {
-    width: 80%;
-    margin-top: 15px;
-    padding-left: 40px;
+  .searchBar {
+    width: 85%; 
   }
-  .fa-search {
-    margin-top: 25px;
-    margin-left: 15px;
-  }
-  .fa-microphone {
-    margin-top: 25px;
-    margin-left: 415px;
+  .fa-microphone{
+    margin-top: 35px;
+    margin-left: 440px;
   }
 
   .box {
