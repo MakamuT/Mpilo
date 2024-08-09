@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mpilo Reviews</title>
+    <!-- Import Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <!-- Import FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <!-- Import Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        /* General Reset */
+        @import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f1faee;
+  color: black;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            background: linear-gradient(to right, hsl(186, 98%, 37%), #A8dadc);
+            color: black;
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-left: 33rem;
+            margin-top: 30px;
+            width: 386px;
+            height: 70px;
+            background: transparent;
+            border-radius: 10px;
+        }
+
+        .navbar ul {
+            display: flex;
+            width: 350px;
+            padding: 0;
+        }
+
+        .navbar li {
+            position: relative;
+            list-style: none;
+            width: 70px;
+            height: 70px;
+            z-index: 1;
+        }
+
+        .navbar a {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .navbar a .icon {
+            color: #e63946;
+            position: relative;
+            display: block;
+            line-height: 75px;
+            font-size: 1.5em;
+            text-align: center;
+            /*transition: .5s;*/
+        }
+
+        .navbar li.active a .icon {
+            transform: translateY(-35px);
+        }
+
+        .navbar a .text {
+            color: #1d3557;
+            position: absolute;
+            font-weight: 400;
+            font-size: 0.75em;
+            letter-spacing: 0.05em;
+            transform: translateY(20px);
+        }
+
+        .navbar li a:hover {
+            background: transparent;
+            border-radius: 50%;
+            margin-top: -20px;
+            border: 5px solid #1d3557;
+        }
+
+        .navigation .icon:hover {
+            color: #1d3557;
+        }
+
+        /* Section Header */
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header .title {
+            font-size: 35px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: hsl(0, 0%, 100%);
+            line-height: 1.2;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            padding: 100px 0;
+        }
+
+        .testimonials-item {
+            background-color: hsl(0, 0%, 100%);
+            padding: 30px;
+            border-radius: 30px;
+        }
+
+        .testimonials-item .info {
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonials-item img {
+            max-width: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        .testimonials-item .name {
+            font-size: 24px;
+            text-transform: capitalize;
+            font-weight: 600;
+            color: hsl(0, 0, 0);
+            line-height: 1.2;
+        }
+
+        .testimonials-item .job {
+            text-transform: capitalize;
+            color: hsl(0, 0, 40%);
+        }
+
+        .testimonials-item p {
+            margin-top: 20px;
+            color: hsl(0, 0, 40%);
+        }
+
+        .testimonials-item .rating {
+            margin-top: 15px;
+            font-size: 14px;
+            color: hsl(36, 88%, 66%);
+        }
+
+        .testimonials .swiper-pagination {
+            position: relative;
+            margin-top: 40px;
+            bottom: auto;
+        }
+
+        .testimonials .swiper-pagination-bullet {
+            height: 12px;
+            width: 12px;
+            background-color: hsl(0, 0%, 100%);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><img src="" alt="Logo" /></div>
+        <ul>
+            <li>
+                <a href="search.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-home"></i>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="blog.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </span>
+                    <span class="text">Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <span class="text">Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <span class="icon">
+                        <i class="fa-solid fa-gear"></i>
+                    </span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">What our clients say</h2>
+            </div>
+            <div class="testimonials-content">
+                <div class="swiper testimonials-slider js-testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="Elizabeth-canva.jpg" alt="Elizabeth">
+                                <div class="text-box">
+                                    <h3 class="name">Elizabeth</h3>
+                                    <span class="job">Stomach Ulcers</span>
+                                </div>
+                            </div>
+                            <p>I had recurring stomach ulcers that were caused and aggravated by alcohol and spicy foods. Mpilo App helped me set an appointment with a GP around my area which was speedy, and I received assistance with my illness. Thank you Mpilo App.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="medium-shot-happy-guy-holding-his-smartphone.jpg" alt="img">
+                                    <div class="text-box">
+                                        <h3 class="name">Thabang</h3>
+                                        <span class="job">Regular Checkup</span>
+                                    </div>
+                            </div>
+                            <p>Mpilo App helped me book a regular checkup effortlessly. The service was prompt, and the doctor was very professional. Highly recommended!</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="ïnfo">
+                                <img src="moe-canva.jpg" alt="img">
+                                <div class="text-box">
+                                    <h3 class="name">Moe</h3>
+                                    <span class="job">Skin Rash</span>
+                                </div>
+                            </div>
+                            <p>I had a persistent skin rash, and Mpilo App connected me with a dermatologist quickly. The treatment was effective, and I am very grateful.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="medium-shot-smiley-woman-posing-outside.jpg" alt="img">
+                                <div class="text-box">
+                                    <h3 class="name">Nomcebo</h3>
+                                    <span class="job">Dental Checkup</span>
+                                </div>
+                            </div>
+                            <p>Booking a dental checkup through Mpilo App was very convenient. The dentist was thorough and attentive. Thank you, Mpilo App!</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div> 
+                        </div>                
+                        <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="thembi-canva.jpg" alt="img">
+                                <div class="text-box">
+                                    <h3 class="name">Thembi</h3>
+                                    <span class="job">Cold&Flu</span>
+                                </div>
+                            </div>
+                            <p>I had a severe flu, and Mpilo App helped me find a nearby clinic quickly. The process was smooth, and I received the care I needed.</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>                                  
+                        </div>
+                </div>
+                    </div>
+                    </div>
+                    <div class="swiper-pagination js-testimonials-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script> 
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween: 30,
+            pagination: {
+                el: '.js-testimonials-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+</body>
+</html>
